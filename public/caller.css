@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #353535;
+}
+
+.container-outer {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(17, 17, 17);
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.container {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(126, 33, 202);
+  border-radius: 50%;
+}
+
+.container .fas {
+  position: absolute;
+  width: 200;
+  height: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  color: rgb(255, 145, 0);
+  text-align: center;
+}
+
+.container:active:hover {
+  background: rgb(224, 36, 36);
+}
+
+.container:active:hover .fas {
+  color: rgb(255, 255, 255);
+}
