@@ -28,7 +28,21 @@
     <script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
     <script src="caller.js"></script>
     <div class="container-outer "></div>
-    <div class="container" onmousedown="call()" onmouseup="hangup()">
+    <div
+      class="container"
+      id="btnTouch"
+      onmousedown="call()"
+      onmouseup="hangup()"
+    >
+      <script>
+        var btn = document.getElementById("btnTouch");
+        btn.addEventListener("touchstart", ev => {
+          call();
+        });
+        btn.addEventListener("touchend", ev => {
+          hangup();
+        });
+      </script>
       <i class="fas fa-microphone"></i>
     </div>
   </body>

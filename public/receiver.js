@@ -1,5 +1,5 @@
 var peer = new Peer("receiver", {
-  host: "localhost",
+  host: "10.31.26.40",
   port: 9000,
   path: "/api"
 });
