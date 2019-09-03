@@ -28,6 +28,13 @@ change to the project directory and install node packages
 npm install
 ```
 
+Update your local ip address (to find out your ip address, type ipconfig in command prompt window) 
+```
+Update public/caller.js host ip
+Update public/receiver.js host ip
+```
+
+
 Start the server 
 ```
 npm start
@@ -35,10 +42,10 @@ npm start
 
 Go to these url on browser for caller/receiver
 ```
-http://localhost:9000/caller
+https://<your ip address>:9000/caller
 ```
 ```
-http://localhost:9000/receiver
+https://<your ip address>:9000/receiver
 ```
 
 ## Built With
